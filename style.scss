@@ -13,6 +13,7 @@ body {
 nav {
   display: flex;
   align-items: center;
+
   img {
     width: 10rem;
   }
@@ -68,5 +69,26 @@ main {
   @include grid(4);
   img {
     @include floating(15px, 0.2, 0px, rgba(0, 0, 0, 0));
+  }
+}
+
+footer {
+  background-color: lighten($bgHero, 50%);
+  color: darken($textColor, 70%);
+  text-align: center;
+  padding: 2rem;
+  p {
+    color: inherit;
+  }
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
