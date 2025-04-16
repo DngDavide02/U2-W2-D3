@@ -193,6 +193,7 @@ nav li {
 }
 nav li:hover {
   background-color: #9749f1;
+  color: white;
 }
 nav ul li a {
   text-decoration: none;
