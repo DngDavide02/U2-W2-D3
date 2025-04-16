@@ -86,6 +86,10 @@ header {
   h1 {
     @include h1FontSize($font-xxxl, bold);
     color: darken($bgHero, 70%);
+    span {
+      font-size: $font-xxl;
+      color: lighten($bgHero, 50%);
+    }
   }
   p {
     font-size: $font-lg;

@@ -236,6 +236,10 @@ header h1 {
   line-height: 1.2;
   color: black;
 }
+header h1 span {
+  font-size: 3rem;
+  color: #e8d7fc;
+}
 header p {
   font-size: 1.5rem;
   color: #f4f4f4;
