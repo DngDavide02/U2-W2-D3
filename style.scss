@@ -84,8 +84,8 @@ header {
   justify-content: space-between;
   background-color: $bgHero;
   h1 {
-    @include h1FontSize($font-xxl, bold);
-    color: $textColor;
+    @include h1FontSize($font-xxxl, bold);
+    color: darken($bgHero, 70%);
   }
   p {
     font-size: $font-lg;
