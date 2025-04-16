@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.padding-sm {
+  padding: 0.5rem;
+}
+
+.padding-normal {
+  padding: 1rem;
+}
+
+.padding-md {
+  padding: 1.5rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 3rem;
+}
+
+.padding-xxl {
+  padding: 4rem;
+}
+
+.marginRight-sm {
+  margin-right: 0.5rem;
+}
+
+.marginRight-normal {
+  margin-right: 1rem;
+}
+
+.marginRight-md {
+  margin-right: 1.5rem;
+}
+
+.marginRight-lg {
+  margin-right: 2rem;
+}
+
+.marginRight-xl {
+  margin-right: 3rem;
+}
+
+.marginRight-xxl {
+  margin-right: 4rem;
+}
+
+.marginBottom-sm {
+  margin-bottom: 0.5rem;
+}
+
+.marginBottom-normal {
+  margin-bottom: 1rem;
+}
+
+.marginBottom-md {
+  margin-bottom: 1.5rem;
+}
+
+.marginBottom-lg {
+  margin-bottom: 2rem;
+}
+
+.marginBottom-xl {
+  margin-bottom: 3rem;
+}
+
+.marginBottom-xxl {
+  margin-bottom: 4rem;
+}
+
+.btn-blue {
+  background-color: #0e6cff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.btn-blue:hover {
+  background-color: #0055da;
+}
+
+.btn-green {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.btn-green:hover {
+  background-color: #3d8b40;
+}
+
+.btn-yellow {
+  background-color: #ff8700;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.btn-yellow:hover {
+  background-color: #cc6c00;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  width: 5rem;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #640fc5;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #f4f4f4;
+}
+header p {
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header .buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+header img {
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+header img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main > * {
+  width: calc((100% - (4 - 1) * 1rem) / 4);
+}
+main img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 0px solid rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+main img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */

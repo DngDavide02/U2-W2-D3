@@ -1,0 +1,42 @@
+@mixin h1FontSize($font-size, $font-weight: bold) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: 1.2;
+}
+
+@mixin button($color-name) {
+  $color: map-get($buttonColors, $color-name);
+  background-color: $color;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+@mixin floating($border-radius: 10px, $shadow-intensity: 0.1, $border-width: 1px, $border-color: rgba(0, 0, 0, 0.1)) {
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, $shadow-intensity);
+  border: $border-width solid $border-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin grid($columns) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  > * {
+    width: calc((100% - (#{$columns} - 1) * 1rem) / #{$columns});
+  }
+}
