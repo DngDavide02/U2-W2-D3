@@ -12,6 +12,12 @@ $padding-values: (
     padding: $value;
   }
 }
+@each $size, $value in $padding-values {
+  .paddingLeftRight-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}
 
 $margin-values: (
   "sm": 0.5rem,

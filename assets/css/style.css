@@ -44,6 +44,36 @@ p {
   padding: 4rem;
 }
 
+.paddingLeftRight-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.paddingLeftRight-normal {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.paddingLeftRight-md {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.paddingLeftRight-lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.paddingLeftRight-xl {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.paddingLeftRight-xxl {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .marginRight-sm {
   margin-right: 0.5rem;
 }
@@ -138,7 +168,7 @@ nav {
   align-items: center;
 }
 nav img {
-  width: 5rem;
+  width: 10rem;
 }
 nav ul {
   list-style: none;
